@@ -19,41 +19,29 @@ var multiply = function(number1, number2) {
 $(document).ready(function(){
   $("form#math").submit(function(event) {
     event.preventDefault();
+
+    var number1 = parseFloat($("#math1").val());
+    var number2 = parseFloat($("#math2").val());
+
     $("#add").click(function(){
-      var number1 = parseFloat($("#math1").val());
-      var number2 = parseFloat($("#math2").val());
       var result = add(number1, number2);
       $("#output").text(result);
     });
-  });
 
-  $("form#math").submit(function(event) {
-    event.preventDefault();
     $("#subtract").click(function(){
-      var number1 = parseFloat($("#math1").val());
-      var number2 = parseFloat($("#math2").val());
       var result = subtract(number1, number2);
       $("#output").text(result);
     });
-  });
 
-  $("form#math").submit(function(event) {
-    event.preventDefault();
     $("#multiply").click(function(){
-      var number1 = parseFloat($("#math1").val());
-      var number2 = parseFloat($("#math2").val());
       var result = multiply(number1, number2);
       $("#output").text(result);
     });
-  });
 
-  $("form#math").submit(function(event) {
-    event.preventDefault();
     $("#divide").click(function(){
-      var number1 = parseFloat($("#math1").val());
-      var number2 = parseFloat($("#math2").val());
       var result = divide(number1, number2);
       $("#output").text(result);
     });
+
   });
 });
