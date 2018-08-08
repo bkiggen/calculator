@@ -23,7 +23,11 @@ $(document).ready(function(event){
       var number1 = parseFloat($("#math1").val());
       var number2 = parseFloat($("#math2").val());
       var result = add(number1, number2);
-      $("#output").text(result);
+      if (result%1 === 0){
+        $("#output").text(parseInt(result));
+      } else {
+        $("#output").text(result);
+      }
     });
   });
 
@@ -33,7 +37,11 @@ $(document).ready(function(event){
       var number1 = parseFloat($("#math1").val());
       var number2 = parseFloat($("#math2").val());
       var result = subtract(number1, number2);
-      $("#output").text(result);
+      if (result%1 === 0){
+        $("#output").text(parseInt(result));
+      } else {
+        $("#output").text(result);
+      }
     });
   });
 
@@ -43,7 +51,11 @@ $(document).ready(function(event){
       var number1 = parseFloat($("#math1").val());
       var number2 = parseFloat($("#math2").val());
       var result = multiply(number1, number2);
-      $("#output").text(result);
+      if (result%1 === 0){
+        $("#output").text(parseInt(result));
+      } else {
+        $("#output").text(result);
+      }
     });
   });
 
@@ -54,7 +66,11 @@ $(document).ready(function(event){
       var number1 = parseFloat($("#math1").val());
       var number2 = parseFloat($("#math2").val());
       var result = divide(number1, number2);
-      $("#output").text(result);
+      if (result%1 === 0){
+        $("#output").text(parseInt(result));
+      } else {
+        $("#output").text(result);
+      }
     });
   });
 });
