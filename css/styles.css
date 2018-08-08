@@ -30,4 +30,5 @@ button {
   overflow: hidden;
   border-radius: 10px;
   margin-top: 50px;
+  word-wrap: break-word;
 }
