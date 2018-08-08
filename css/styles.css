@@ -1,18 +1,33 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
 ul {
   margin-top: 50px;
 }
-
 
 .form-control {
   width:50%;
   margin: auto;
 }
 
-body {
-    text-align: center;
-}
-
 button {
   width: 20%;
   margin: 2px;
+}
+
+#output {
+  margin: 100px auto;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.container {
+  width:60%;
+  background-color: grey;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 50px;
 }
