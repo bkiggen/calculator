@@ -11,17 +11,30 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
-      <form id="add">
+
+      <form id="math">
+
         <div class="form-group">
-          <label for="add1">1st Number:</label>
-          <input id="add1" class="form-control" type="text">
+          <label for="math1">1st Number:</label>
+          <input id="math1" class="form-control" type="text">
         </div>
+
         <div class="form-group">
-          <label for="add2">2nd Number:</label>
-          <input id="add2" class="form-control" type="text">
+          <label for="math2">2nd Number:</label>
+          <input id="math2" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn btn-success">ADD!</button>
+
+        <ul>
+          <button type="submit" class="btn btn-success" id="add">ADD</button>
+          <button type="submit" class="btn btn-success" id="subtract">SUBTRACT</button>
+          <button type="submit" class="btn btn-success" id="multiply">MULTIPLY</button>
+          <button type="submit" class="btn btn-success" id="divide">DIVIDE</button>
+        </ul>
+
       </form>
+      <div id="output">
+
+      </div>
     </div>
   </body>
 </html>
